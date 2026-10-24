@@ -40,7 +40,7 @@ h1, h2, h3, p { margin-top: 0; }
 h1, h2, h3 { text-wrap: balance; }
 :focus-visible { outline: 3px solid #ffbc81; outline-offset: 4px; }
 [hidden] { display: none !important; }
-.shell { width: min(100% - 2*var(--gutter), var(--max)); margin-inline: auto; }
+.shell { width: min(calc(100% - var(--gutter) - var(--gutter)), var(--max)); margin-inline: auto; }
 .svg-sprites { position: absolute; width: 0; height: 0; overflow: hidden; }
 .icon { width: 19px; height: 19px; flex: 0 0 auto; }
 .skip-link { position: fixed; top: 10px; left: 10px; z-index: 200; padding: 13px 18px; background: var(--text); color: var(--bg); transform: translateY(-180%); }
